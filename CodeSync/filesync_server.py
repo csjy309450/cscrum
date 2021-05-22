@@ -15,6 +15,9 @@ import uuid
 import shutil
 import hashlib
 import threading
+import traceback
+import base64
+
 
 g_global_config = {
     "filesync_server_ip": "0.0.0.0",
@@ -247,21 +250,21 @@ class FileSyncServerRequestHandler(BaseHTTPRequestHandler):
                 filepaths.remove('')
             if not os.path.isdir(g_global_config['filesync_workdir'] + SDID + "/root"):
                 os.mkdir(g_global_config['filesync_workdir'] + SDID + "/root")
+            willMakeDir = g_global_config['filesync_workdir'] + SDID + "/root/"
             for it in filepaths:
-                if not os.path.isdir(g_global_config['filesync_workdir'] + SDID + "/root/" + it):
-                    os.mkdir(g_global_config['filesync_workdir'] + SDID + "/root/" + it)
+                if not os.path.isdir(willMakeDir + it):
+                    os.mkdir(willMakeDir + it)
                     pass
+                willMakeDir += it + '/'
             if not os.path.isdir(g_global_config['filesync_workdir'] + SDID + "/root/" + path):
                 return 3
-            batch_size = 1024
             rest_size = len_
             with open(g_global_config['filesync_workdir'] + SDID + "/root/" + path_, 'wb') as f:
-                while rest_size > batch_size:
-                    buff = f_.read(batch_size)
-                    f.write(buff)
-                    rest_size -= batch_size
                 buff = f_.read(rest_size)
-                f.write(buff)
+                buff = str(buff, 'utf8')
+                bbuff = bytes(buff, 'utf8')
+                b64 = base64.decodebytes(bbuff)
+                f.write(b64)
             return 0
 
         def __append_file(path_, f_, len_):
@@ -279,15 +282,13 @@ class FileSyncServerRequestHandler(BaseHTTPRequestHandler):
                     pass
             if not os.path.isdir(g_global_config['filesync_workdir'] + SDID + "/root/" + path):
                 return 3
-            batch_size = 1024
             rest_size = len_
             with open(g_global_config['filesync_workdir'] + SDID + "/root/" + path_, 'ab') as f:
-                while rest_size > batch_size:
-                    buff = f_.read(batch_size)
-                    f.write(buff)
-                    rest_size -= batch_size
                 buff = f_.read(rest_size)
-                f.write(buff)
+                buff = str(buff, 'utf8')
+                bbuff = bytes(buff, 'utf8')
+                b64 = base64.decodebytes(bbuff)
+                f.write(b64)
             return 0
 
         def __remove_file(path_):
@@ -297,7 +298,7 @@ class FileSyncServerRequestHandler(BaseHTTPRequestHandler):
             if os.path.isfile(g_global_config['filesync_workdir'] + SDID + "/root/" + path_):
                 os.remove(g_global_config['filesync_workdir'] + SDID + "/root/" + path_)
                 return 0
-            pass
+            return 1
 
         def __mkdir(path_):
             filepaths = re.split("[\\/]", path_)
@@ -337,12 +338,12 @@ class FileSyncServerRequestHandler(BaseHTTPRequestHandler):
                     pass
                 else:
                     '''parser first data: file header'''
-                    print(post_body)
                     post_body = self.rfile.readline().decode('utf-8')
                     if post_body.find('Content-Length: ') != -1:
                         sub_len = int(post_body[post_body.find('Content-Length: ')+len('Content-Length: '):])
                         post_body = self.rfile.readline()  # step over \r\n
                         post_body = self.rfile.read(sub_len).decode('utf-8')
+                        print(post_body)
                         try:
                             jobj = json.loads(post_body)
                             if jobj is None or type(jobj) is not dict:
@@ -350,6 +351,8 @@ class FileSyncServerRequestHandler(BaseHTTPRequestHandler):
                             else:
                                 print(str(jobj))
                                 filepath = jobj['filepath']
+                                if filepath == 'qianqian\x08ill_gatherer.py':
+                                    pass
                                 SDID = jobj['SDID']
                                 fop = jobj['fop']
                                 fstate = jobj['fstate']
@@ -357,6 +360,7 @@ class FileSyncServerRequestHandler(BaseHTTPRequestHandler):
                             pass
                         except Exception as e:
                             status = 1
+                            print("__filesync_updateFile_post_handler() parse file header failed.")
                             pass
                     else:
                         # invalid format
