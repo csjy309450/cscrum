@@ -1,0 +1,38 @@
+<input>
+import os;res=os.popen('dir');print(res.read())
+</input>
+ 驱动器 E 中的卷是 工具
+ 卷的序列号是 B4D1-773A
+
+ E:\VMware\YZ\github\cscrum\RemotePy 的目录
+
+2021/05/16  15:32    <DIR>          .
+2021/05/16  15:32    <DIR>          ..
+2021/05/16  15:32    <DIR>          .idea
+2021/05/16  14:30             6,064 input_server.py
+2021/01/26  20:41               749 msg_queue.py
+2021/05/16  15:32                 0 out.log
+2021/05/16  14:31             7,818 pyinter_core.py
+2021/05/16  15:32    <DIR>          __pycache__
+               4 个文件         14,631 字节
+               4 个目录 279,538,180,096 可用字节
+
+<input>
+import os;res=os.popen('dir');print(res.read())
+</input>
+ 驱动器 E 中的卷是 工具
+ 卷的序列号是 B4D1-773A
+
+ E:\VMware\YZ\github\cscrum\RemotePy 的目录
+
+2021/05/16  15:32    <DIR>          .
+2021/05/16  15:32    <DIR>          ..
+2021/05/16  15:32    <DIR>          .idea
+2021/05/16  14:30             6,064 input_server.py
+2021/01/26  20:41               749 msg_queue.py
+2021/05/16  15:32                 0 out.log
+2021/05/16  14:31             7,818 pyinter_core.py
+2021/05/16  15:32    <DIR>          __pycache__
+               4 个文件         14,631 字节
+               4 个目录 279,538,180,096 可用字节
+
