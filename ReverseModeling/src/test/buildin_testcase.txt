@@ -1,0 +1,214 @@
+########################################
+
+bool
+void 
+void *
+void*
+const void *
+void *const
+void * const 
+void**
+void * *
+void***
+
+########################################
+
+int
+signed int 
+int *
+signed int *
+int**
+signed int**
+
+unsigned  int 
+unsigned  int *
+unsigned int**
+
+const signed int 
+const int
+signed int const 
+const signed int 
+const signed int *
+signed int const *
+const signed int**
+signed int const * *
+
+unsigned int const 
+const unsigned int
+unsigned int const * 
+const unsigned int* 
+const unsigned int**
+unsigned int const  * *
+
+########################################
+
+short
+short *
+short**
+
+signed short 
+signed short *
+signed short**
+
+unsigned  short 
+unsigned  short *
+unsigned short**
+
+const signed short 
+const short
+signed short const 
+const signed short 
+const signed short *
+signed short const *
+const signed short**
+signed short const * *
+
+unsigned short const 
+const unsigned short
+unsigned short const * 
+const unsigned short* 
+const unsigned short**
+unsigned short const  * *
+
+########################################
+
+char
+char *
+char**
+
+signed char 
+signed char *
+signed char**
+
+unsigned  char 
+unsigned  char *
+unsigned char**
+
+const signed char 
+const char
+signed char const 
+const signed char 
+const signed char *
+signed char const *
+const signed char**
+signed char const * *
+
+unsigned char const 
+const unsigned char
+unsigned char const * 
+const unsigned char* 
+const unsigned char**
+unsigned char const  * *
+
+########################################
+
+long
+long *
+long**
+
+signed long 
+signed long *
+signed long**
+
+unsigned  long 
+unsigned  long *
+unsigned long**
+
+const signed long 
+const long
+signed long const 
+const signed long 
+const signed long *
+signed long const *
+const signed long**
+signed long const * *
+
+unsigned long const 
+const unsigned long
+unsigned long const * 
+const unsigned long* 
+const unsigned long**
+unsigned long const  * *
+
+########################################
+
+__int64
+__int64 *
+__int64**
+
+signed __int64 
+signed __int64 *
+signed __int64**
+
+unsigned  __int64 
+unsigned  __int64 *
+unsigned __int64**
+
+const signed __int64 
+const __int64
+signed __int64 const 
+const signed __int64 
+const signed __int64 *
+signed __int64 const *
+const signed __int64**
+signed __int64 const * *
+
+unsigned __int64 const 
+const unsigned __int64
+unsigned __int64 const * 
+const unsigned __int64* 
+const unsigned __int64**
+unsigned __int64 const  * *
+
+########################################
+
+long long
+long long *
+long long**
+
+signed long long 
+signed long long *
+signed long long**
+
+unsigned  long long 
+unsigned  long long *
+unsigned long long**
+
+const long long
+long long const 
+const signed long long 
+signed long long const 
+const signed long long 
+const signed long long *
+signed long long const *
+const signed long long**
+signed long long const * *
+
+unsigned long long const 
+const unsigned long long
+unsigned long long const * 
+const unsigned long long* 
+const unsigned long long**
+unsigned long long const  * *
+
+########################################
+
+float
+float  *
+float  **
+float  * * *
+const    float
+const    float  *
+const    float  **
+const    float  * * *
+
+########################################
+
+double
+double  *
+double  **
+double  * * *
+const    double
+const    double  *
+const    double  **
+const    double  * * *

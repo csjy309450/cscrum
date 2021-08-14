@@ -1,0 +1,37 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygenindex xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="index.xsd" version="1.8.14">
+  <compound refid="struct__xml_char_encoding_handler" kind="struct"><name>_xmlCharEncodingHandler</name>
+    <member refid="struct__xml_char_encoding_handler_1a9cafc98368bd39e4c7db5cd68da1235e" kind="variable"><name>name</name></member>
+    <member refid="struct__xml_char_encoding_handler_1afd55173902249fac17220cbca51b2ac4" kind="variable"><name>input</name></member>
+    <member refid="struct__xml_char_encoding_handler_1a011e26585ac84e3e5be5421d35b4419f" kind="variable"><name>output</name></member>
+  </compound>
+  <compound refid="test_8h" kind="file"><name>test.h</name>
+    <member refid="test_8h_1a662791d23b3d1e0a37244d35c57a02e5" kind="enum"><name>xmlCharEncoding</name></member>
+    <member refid="test_8h_1a662791d23b3d1e0a37244d35c57a02e5a8eb7c20d6ac104435e8ff9ef844b96d9" kind="enumvalue"><name>XML_CHAR_ENCODING_ERROR</name></member>
+    <member refid="test_8h_1a662791d23b3d1e0a37244d35c57a02e5acae0fd3b6ea30dc487fb686d02072ebf" kind="enumvalue"><name>XML_CHAR_ENCODING_NONE</name></member>
+    <member refid="test_8h_1a662791d23b3d1e0a37244d35c57a02e5a11862d4179827426632c74b628d7c762" kind="enumvalue"><name>XML_CHAR_ENCODING_UTF8</name></member>
+    <member refid="test_8h_1a662791d23b3d1e0a37244d35c57a02e5aba75d7f78466ff52bd3d307c9a217841" kind="enumvalue"><name>XML_CHAR_ENCODING_UTF16LE</name></member>
+    <member refid="test_8h_1a662791d23b3d1e0a37244d35c57a02e5a4f438d3176e45a21ea259756510a9149" kind="enumvalue"><name>XML_CHAR_ENCODING_UTF16BE</name></member>
+    <member refid="test_8h_1a662791d23b3d1e0a37244d35c57a02e5a856d0d175594d4eb58338fe6f83e5ebf" kind="enumvalue"><name>XML_CHAR_ENCODING_UCS4LE</name></member>
+    <member refid="test_8h_1a662791d23b3d1e0a37244d35c57a02e5aaa5384c4ddf8015be9ccdcb7b159451a" kind="enumvalue"><name>XML_CHAR_ENCODING_UCS4BE</name></member>
+    <member refid="test_8h_1a662791d23b3d1e0a37244d35c57a02e5a6641003572f869e740db1ef868924dcf" kind="enumvalue"><name>XML_CHAR_ENCODING_EBCDIC</name></member>
+    <member refid="test_8h_1a662791d23b3d1e0a37244d35c57a02e5ae90789bcf7d0d6c543d1ca5341bf8f59" kind="enumvalue"><name>XML_CHAR_ENCODING_UCS4_2143</name></member>
+    <member refid="test_8h_1a662791d23b3d1e0a37244d35c57a02e5aa83d00b2ad2f5a6643c07d76a55772a8" kind="enumvalue"><name>XML_CHAR_ENCODING_UCS4_3412</name></member>
+    <member refid="test_8h_1a662791d23b3d1e0a37244d35c57a02e5a5543a1670550d454aff0ba4c358297c1" kind="enumvalue"><name>XML_CHAR_ENCODING_UCS2</name></member>
+    <member refid="test_8h_1a662791d23b3d1e0a37244d35c57a02e5aabc7b680e8abc2be7842aa5e7d3bf99c" kind="enumvalue"><name>XML_CHAR_ENCODING_8859_1</name></member>
+    <member refid="test_8h_1a662791d23b3d1e0a37244d35c57a02e5a2830fb9ba689dbe77e7dc96c451926f8" kind="enumvalue"><name>XML_CHAR_ENCODING_8859_2</name></member>
+    <member refid="test_8h_1a662791d23b3d1e0a37244d35c57a02e5a63e0e6ed204547f600b2db6d3017a999" kind="enumvalue"><name>XML_CHAR_ENCODING_8859_3</name></member>
+    <member refid="test_8h_1a662791d23b3d1e0a37244d35c57a02e5a4bfa586db9f2a906c5263d536b130fcd" kind="enumvalue"><name>XML_CHAR_ENCODING_8859_4</name></member>
+    <member refid="test_8h_1a662791d23b3d1e0a37244d35c57a02e5ad5104a1599780e0252b91414ebff2126" kind="enumvalue"><name>XML_CHAR_ENCODING_8859_5</name></member>
+    <member refid="test_8h_1a662791d23b3d1e0a37244d35c57a02e5a08fb83287eae29ff62836cd7036df485" kind="enumvalue"><name>XML_CHAR_ENCODING_8859_6</name></member>
+    <member refid="test_8h_1a662791d23b3d1e0a37244d35c57a02e5a1ece998a09cab3a6ec896e3c7be61ce4" kind="enumvalue"><name>XML_CHAR_ENCODING_8859_7</name></member>
+    <member refid="test_8h_1a662791d23b3d1e0a37244d35c57a02e5a4db732ca2634f84bd0bfd6c5e53b8b1b" kind="enumvalue"><name>XML_CHAR_ENCODING_8859_8</name></member>
+    <member refid="test_8h_1a662791d23b3d1e0a37244d35c57a02e5ab7a1467a7f4e988a52b26fc0462e8d65" kind="enumvalue"><name>XML_CHAR_ENCODING_8859_9</name></member>
+    <member refid="test_8h_1a662791d23b3d1e0a37244d35c57a02e5a554dd085cc373f573b0fd734a91edd69" kind="enumvalue"><name>XML_CHAR_ENCODING_2022_JP</name></member>
+    <member refid="test_8h_1a662791d23b3d1e0a37244d35c57a02e5ae0d565f864a7a4df2e72d8fd997ef90e" kind="enumvalue"><name>XML_CHAR_ENCODING_SHIFT_JIS</name></member>
+    <member refid="test_8h_1a662791d23b3d1e0a37244d35c57a02e5afd3458f639f528fd29a5ea42677592b3" kind="enumvalue"><name>XML_CHAR_ENCODING_EUC_JP</name></member>
+    <member refid="test_8h_1a662791d23b3d1e0a37244d35c57a02e5adbf4cef375b39c207baf999cf9c967dc" kind="enumvalue"><name>XML_CHAR_ENCODING_ASCII</name></member>
+    <member refid="test_8h_1a0a5ccf5d8910103cc83f1f1ec782a2c5" kind="function"><name>xmlInitCharEncodingHandlers</name></member>
+    <member refid="test_8h_1ab4adfd7611d30d063e17e6e16ff371d0" kind="function"><name>xmlAddEncodingAlias</name></member>
+  </compound>
+</doxygenindex>
